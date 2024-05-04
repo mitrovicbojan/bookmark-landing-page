@@ -109,6 +109,7 @@ body {
 .section-hero {
   background-color: #fff;
   padding: 9.6rem 0 9.6rem 0;
+  margin-bottom: 12rem;
 }
 .hero {
   max-width: 130rem;
@@ -124,7 +125,7 @@ body {
   color: #333;
   letter-spacing: 1px;
   font-weight: 600;
-  font-size: 3.6rem;
+  font-size: 4.8rem;
   line-height: 1.05;
   margin-bottom: 3.2rem;
 }
@@ -133,7 +134,7 @@ body {
   font-size: 2rem;
   line-height: 1.6;
   margin-bottom: 4.8rem;
-  color: #333;
+  color: #9694a6;
 }
 
 .btn,
@@ -149,6 +150,7 @@ body {
   border: 2px solid transparent;
   cursor: pointer;
   font-family: inherit;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.15);
 }
 
 .btn--blue:link,
@@ -166,8 +168,8 @@ body {
 
 .btn--gray:link,
 .btn--gray:visited {
-  color: hsl(229, 8%, 60%);
-  background-color: hsl(225, 9%, 83%);
+  color: #70707a;
+  background-color: #e8e5e7;
 }
 
 .btn--gray:hover,
@@ -192,5 +194,42 @@ body {
   width: 35%;
   font-size: 3rem;
   /* border-top-left-radius: 100px; */
-  border-bottom-left-radius: 30%;
+  border-bottom-left-radius: 40%;
+}
+
+/*******************/
+/*SECTION FEATURES*/
+/******************/
+
+.container {
+  margin-bottom: 8rem;
+}
+
+.fetures-text-box {
+  width: 60rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading-secondary {
+  color: #333;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 2.8rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.row {
+  text-align: center;
+}
+
+.buttons {
+  display: inline-block;
+  border-bottom: 2px solid hsl(229, 8%, 60%);
+}
+
+.btn-tab {
+  border-bottom: 2px solid transparent;
+  padding: 1.8rem 3.2rem;
 }
