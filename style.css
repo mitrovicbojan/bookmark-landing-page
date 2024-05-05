@@ -226,10 +226,48 @@ body {
 
 .buttons {
   display: inline-block;
-  border-bottom: 2px solid hsl(229, 8%, 60%);
+  border-bottom: 1px solid hsl(229, 8%, 60%);
+  margin-bottom: 6.4rem;
 }
 
 .btn-tab {
   border-bottom: 2px solid transparent;
   padding: 1.8rem 3.2rem;
+}
+.active {
+  border-bottom: 3px solid hsl(0, 94%, 66%);
+}
+
+.tab-items {
+  max-width: 130rem;
+  margin: 5rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+.features-img {
+  width: 100%;
+  z-index: 1000;
+}
+.features-img-box {
+  position: relative;
+}
+
+.features-img-box::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-color: hsl(231, 69%, 60%);
+  top: 53%;
+  right: 35%;
+  height: 30rem;
+  width: 80rem;
+  font-size: 3rem;
+  border-bottom-right-radius: 40%;
+  z-index: -1;
+}
+.features-text-box {
+  text-align: left;
 }
