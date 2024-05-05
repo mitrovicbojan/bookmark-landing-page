@@ -23,15 +23,6 @@
     <title>Frontend Mentor | Bookmark landing page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <header class="header">
@@ -89,68 +80,92 @@
           </div>
           <div class="row">
             <div class="buttons">
-              <a href="#" class="main-nav-link btn-tab">Simple Bookmarking</a>
-              <a href="#" class="main-nav-link btn-tab">Speedy Searching</a>
-              <a href="#" class="main-nav-link btn-tab">Easy Sharing</a>
+              <a
+                href="##"
+                data-tab-target="#simple"
+                class="main-nav-link btn-tab active"
+                >Simple Bookmarking</a
+              >
+              <a
+                href="##"
+                data-tab-target="#speed"
+                class="main-nav-link btn-tab"
+                >Speedy Searching</a
+              >
+              <a href="##" data-tab-target="#easy" class="main-nav-link btn-tab"
+                >Easy Sharing</a
+              >
             </div>
-            <div class="tab-items" id="simple">
-              <div class="features-img-box">
-                <picture>
-                  <img
-                    src="./images/illustration-features-tab-1.svg"
-                    class="features-img"
-                    alt="simple booking illustration"
-                  />
-                </picture>
-              </div>
-              <div class="features-text-box">
-                <h1 class="heading-secondary">Bookmark in one click</h1>
-                <p class="hero-description">
-                  Organize your bookmarks however you like. Our simple
-                  drag-and-drop interface gives you complete control over how
-                  you manage your favourite sites.
-                </p>
-                <a href="#" class="btn btn--blue margin-right-sm">More info</a>
-              </div>
-            </div>
-            <div class="tab-items" id="speed">
-              <div class="features-img-box">
-                <picture>
-                  <img
-                    src="./images/illustration-features-tab-2.svg"
-                    class="features-img"
-                    alt="simple booking illustration"
-                  />
-                </picture>
-              </div>
-              <div class="features-text-box">
-                <h1 class="heading-secondary">Intelligent search</h1>
-                <p class="hero-description">
-                  Our powerful search feature will help you find saved sites in
-                  no time at all. No need to trawl through all of your
-                  bookmarks.
-                </p>
-                <a href="#" class="btn btn--blue margin-right-sm">More info</a>
+            <div class="tab-item active" id="simple" data-tab-content>
+              <div class="tab-items">
+                <div class="features-img-box">
+                  <picture>
+                    <img
+                      src="./images/illustration-features-tab-1.svg"
+                      class="features-img"
+                      alt="simple booking illustration"
+                    />
+                  </picture>
+                </div>
+                <div class="features-text-box">
+                  <h1 class="heading-secondary">Bookmark in one click</h1>
+                  <p class="hero-description">
+                    Organize your bookmarks however you like. Our simple
+                    drag-and-drop interface gives you complete control over how
+                    you manage your favourite sites.
+                  </p>
+                  <a href="#" class="btn btn--blue margin-right-sm"
+                    >More info</a
+                  >
+                </div>
               </div>
             </div>
-            <div class="tab-items" id="easy">
-              <div class="features-img-box">
-                <picture>
-                  <img
-                    src="./images/illustration-features-tab-3.svg"
-                    class="features-img"
-                    alt="simple booking illustration"
-                  />
-                </picture>
+            <div class="tab-item" id="speed" data-tab-content>
+              <div class="tab-items">
+                <div class="features-img-box">
+                  <picture>
+                    <img
+                      src="./images/illustration-features-tab-2.svg"
+                      class="features-img"
+                      alt="simple booking illustration"
+                    />
+                  </picture>
+                </div>
+                <div class="features-text-box">
+                  <h1 class="heading-secondary">Intelligent search</h1>
+                  <p class="hero-description">
+                    Our powerful search feature will help you find saved sites
+                    in no time at all. No need to trawl through all of your
+                    bookmarks.
+                  </p>
+                  <a href="#" class="btn btn--blue margin-right-sm"
+                    >More info</a
+                  >
+                </div>
               </div>
-              <div class="features-text-box">
-                <h1 class="heading-secondary">Share your bookmarks</h1>
-                <p class="hero-description">
-                  Easily share your bookmarks and collections with others.
-                  Create a shareable link that you can send at the click of a
-                  button.
-                </p>
-                <a href="#" class="btn btn--blue margin-right-sm">More info</a>
+            </div>
+            <div class="tab-item" id="easy" data-tab-content>
+              <div class="tab-items">
+                <div class="features-img-box">
+                  <picture>
+                    <img
+                      src="./images/illustration-features-tab-3.svg"
+                      class="features-img"
+                      alt="simple booking illustration"
+                    />
+                  </picture>
+                </div>
+                <div class="features-text-box">
+                  <h1 class="heading-secondary">Share your bookmarks</h1>
+                  <p class="hero-description">
+                    Easily share your bookmarks and collections with others.
+                    Create a shareable link that you can send at the click of a
+                    button.
+                  </p>
+                  <a href="#" class="btn btn--blue margin-right-sm"
+                    >More info</a
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -158,6 +173,7 @@
       </section>
     </main>
   </body>
+  <script src="main.js"></script>
 </html>
 
 <!-- 
