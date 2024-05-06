@@ -345,3 +345,63 @@ body {
 .arrow {
   color: #5267df;
 }
+
+.accordion {
+  width: 90%;
+  max-width: 100rem;
+  margin: 2rem auto;
+}
+
+.accordion-item {
+  background-color: #fff;
+
+  margin: 1rem 0;
+  border-top: 2px solid #e8e5e7;
+}
+
+.accordion-item:last-child {
+  border-bottom: 2px solid #e8e5e7;
+}
+
+.accordion-item-header {
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.accordion-item-header .heading-tertiary {
+  width: 90%;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.accordion-item-header:hover,
+.heading-tertiary:hover {
+  color: hsl(0, 94%, 66%);
+}
+
+.accordion-item-header::after {
+  content: url(./images/icon-arrow.svg);
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  transition: transform 300ms;
+}
+
+.accordion-item-header.active::after {
+  content: url(./images/icon-arrow-red.svg);
+  transform: rotate(180deg);
+}
+
+.accordion-item-body {
+  display: none;
+  padding: 2rem 0;
+  line-height: 1.5rem;
+}
+
+.accordion-item-header.active + .accordion-item-body {
+  display: block;
+}
