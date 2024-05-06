@@ -341,14 +341,13 @@ body {
 /********************/
 /*SECTION FAQ*/
 /********************/
-
-.arrow {
-  color: #5267df;
+.faq-container {
+  margin: 12rem 0;
 }
 
 .accordion {
   width: 90%;
-  max-width: 100rem;
+  max-width: 60rem;
   margin: 2rem auto;
 }
 
@@ -404,4 +403,51 @@ body {
 
 .accordion-item-header.active + .accordion-item-body {
   display: block;
+}
+
+/********************/
+/*SECTION CONTACT*/
+/********************/
+
+.section-contact {
+  background-color: #5267df;
+  text-align: center;
+  padding: 9rem;
+}
+
+.contact-box {
+  width: 50rem;
+  margin: 0 auto;
+}
+
+.subscribers {
+  color: #ffffff;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 4.8rem;
+  letter-spacing: 5px;
+}
+
+.heading-tertiary-white {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4.8rem;
+  font-size: 3.2rem;
+  color: #ffffff;
+}
+
+.email-input {
+  padding: 1.2rem 2.4rem;
+  border-radius: 3px;
+  font-size: 1.4rem;
+  outline: none;
+  border: 2px solid #ffffff;
+  font-family: inherit;
+  margin-right: 1rem;
+  width: 60%;
+}
+
+.section-footer {
+  padding: 3.6rem;
+  background-color: hsl(229, 31%, 21%);
 }
