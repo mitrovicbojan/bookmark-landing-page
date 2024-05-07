@@ -343,12 +343,14 @@ body {
 /********************/
 .faq-container {
   margin: 12rem 0;
+  text-align: center;
 }
 
 .accordion {
   width: 90%;
   max-width: 60rem;
   margin: 2rem auto;
+  padding-bottom: 4rem;
 }
 
 .accordion-item {
@@ -369,6 +371,7 @@ body {
   position: relative;
   cursor: pointer;
   transition: all 0.3s;
+  text-align: left;
 }
 
 .accordion-item-header .heading-tertiary {
@@ -399,6 +402,7 @@ body {
   display: none;
   padding: 2rem 0;
   line-height: 1.5rem;
+  text-align: left;
 }
 
 .accordion-item-header.active + .accordion-item-body {
@@ -448,6 +452,48 @@ body {
 }
 
 .section-footer {
-  padding: 3.6rem;
+  padding: 3.6rem 12rem;
   background-color: hsl(229, 31%, 21%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: hsl(0, 94%, 66%);
+}
+
+.foter-social-links {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.facebook-icon,
+.twitter-icon {
+  color: #ffffff;
+  cursor: pointer;
+}
+.facebook-icon:hover,
+.twitter-icon:hover {
+  color: hsl(0, 94%, 66%);
 }
