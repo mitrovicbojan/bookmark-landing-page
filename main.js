@@ -32,3 +32,35 @@ accordionItemHeaders.forEach((accordionItemHeaders) => {
     accordionItemHeaders.classList.toggle("active");
   });
 });
+
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+
+btnNavEl.addEventListener("click", () => {
+  headerEl.classList.toggle("nav-open");
+});
+
+const allLinks = document.querySelectorAll("a:link");
+
+allLinks.forEach(function (link) {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+    //scroll back to top
+
+    if (href === "#")
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+
+    //close mobile nav
+    if (link.classList.contains("main-nav-link"))
+      headerEl.classList.toggle("nav-open");
+  });
+});
