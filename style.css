@@ -36,6 +36,7 @@ html {
 
 body {
   font-family: "Rubik", sans-serif;
+  background: #ffffff;
 }
 
 .margin-right-sm {
@@ -50,20 +51,19 @@ body {
   height: 2.5rem;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 9.6rem;
-  margin: 0 6rem 0 6rem;
-  padding: 0 6rem 0 3rem;
-  position: relative;
-}
-
 /**********************/
 /* MAIN NAV*/
 /**********************/
-
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 3rem 10rem;
+  position: relative;
+  background: #ffffff;
+  height: 8rem;
+}
 .main-nav-list {
   list-style: none;
   display: flex;
@@ -525,26 +525,21 @@ body {
   html {
     font-size: 52.5%;
   }
-  .header {
-    margin: 0;
-    padding: 0;
-  }
+
   .btn-mobile-nav {
     display: block;
-    z-index: 1000;
   }
-  .main-nav {
+  .main-nav-list {
     background-color: rgba(37, 43, 70, 0.8);
     position: absolute;
-    top: 0;
+    top: 8rem;
     left: 0;
-
     transform: translateX(100%);
-
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.5s ease-in;
+
+    /* transition: all 0.5s ease-in; */
 
     /* hide nav */
     opacity: 0;
@@ -555,10 +550,13 @@ body {
 
     z-index: 1000;
   }
-
   .nav-open .main-nav {
+    background: rgba(37, 43, 70, 0.8);
+  }
+  .nav-open .main-nav-list {
     width: 100%;
     height: 100vh;
+    top: 8rem;
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
@@ -575,7 +573,7 @@ body {
   .main-nav-list {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 4.8rem;
   }
   .main-nav-link:link,
@@ -585,10 +583,6 @@ body {
 }
 
 @media (max-width: 60em) {
-  .main-nav {
-    text-align: center;
-    flex-direction: column;
-  }
   .section-hero {
     margin-top: 0;
     margin-bottom: 2rem;
