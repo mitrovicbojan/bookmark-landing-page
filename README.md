@@ -8,7 +8,7 @@ This is a solution to the [Bookmark landing page challenge on Frontend Mentor](h
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/bookmark-landing-page-1UChZOXg1S)
 - Live Site URL: [Add live site URL here](https://bookmark-land-fm.netlify.app/)
 
 ### Built with
