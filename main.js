@@ -64,3 +64,25 @@ allLinks.forEach(function (link) {
       headerEl.classList.toggle("nav-open");
   });
 });
+
+//////////
+//EMAIL//
+/////////
+
+const emailInput = document.getElementById("email-input");
+const submitBtn = document.getElementById("submit-btn");
+const invalidEmail = document.getElementById("invalidEmail");
+
+submitBtn.addEventListener("click", function () {
+  const emailValidation =
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  if (!emailInput.value.match(emailValidation)) {
+    invalidEmail.style.display = "block";
+    emailInput.style.border = "2px solid hsl(0, 94%, 66%)";
+
+    return true;
+  } else {
+    invalidEmail.innerHTML = "";
+    return false;
+  }
+});

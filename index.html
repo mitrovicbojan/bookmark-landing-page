@@ -43,7 +43,7 @@
           </li>
 
           <li><a class="main-nav-link nav-cta" href="#cta">Login</a></li>
-          <!-- <div class="foter-social-links">
+          <div class="nav-social-links">
             <i
               ><svg
                 class="facebook-icon"
@@ -72,7 +72,7 @@
                 />
               </svg>
             </i>
-          </div> -->
+          </div>
         </ul>
         <button class="btn-mobile-nav">
           <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
@@ -106,7 +106,7 @@
           </div>
         </div>
       </section>
-      <section class="section-features">
+      <section class="section-features" id="features">
         <div class="container">
           <div class="fetures-text-box">
             <h2 class="heading-secondary">Features</h2>
@@ -121,16 +121,19 @@
               <a
                 href="##"
                 data-tab-target="#simple"
-                class="main-nav-link btn-tab active"
+                class="features-nav-link btn-tab active"
                 >Simple Bookmarking</a
               >
               <a
                 href="##"
                 data-tab-target="#speed"
-                class="main-nav-link btn-tab"
+                class="features-nav-link btn-tab"
                 >Speedy Searching</a
               >
-              <a href="##" data-tab-target="#easy" class="main-nav-link btn-tab"
+              <a
+                href="##"
+                data-tab-target="#easy"
+                class="features-nav-link btn-tab"
                 >Easy Sharing</a
               >
             </div>
@@ -209,7 +212,7 @@
           </div>
         </div>
       </section>
-      <section class="section-extensions">
+      <section class="section-extensions" id="pricing">
         <div class="extensions-container">
           <div class="fetures-text-box">
             <h2 class="heading-secondary">Download the extension</h2>
@@ -359,14 +362,23 @@
               >Stay up-to-date with what</span
             ><span class="heading-tertiary-white--2">we’re doing</span>
           </h3>
-          <input
-            class="email-input"
-            id="email-input"
-            type="email"
-            required
-            placeholder="Enter your email address"
-          />
-          <a class="main-nav-link nav-cta" href="##">Contact us</a>
+          <from class="contact-form">
+            <div class="input-box">
+              <input
+                class="email-input"
+                id="email-input"
+                type="text"
+                required
+                placeholder="Enter your email address"
+              />
+              <label id="invalidEmail" class="invalidEmail"
+                >Whoops, make shure it's an email.</label
+              >
+            </div>
+            <a class="contact-nav-link nav-cta" id="submit-btn" href="##"
+              >Contact us</a
+            >
+          </from>
         </div>
       </section>
       <section class="section-footer">
@@ -420,43 +432,3 @@
   ></script>
   <script src="main.js"></script>
 </html>
-
-<!-- 
-
-Frequently Asked Questions Here are some of our FAQs. If you have any other
-questions you’d like answered please feel free to email us.
-
-
-Question 1 -->
-<!-- What is Bookmark? -->
-
-<!-- Answer 1 -->
-<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo
-eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis. -->
-
-<!-- Question 2 -->
-<!-- How can I request a new browser? -->
-
-<!-- Answer 2 -->
-<!-- Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies
-non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis
-ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie
-tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies
-non ligula. Suspendisse imperdiet. -->
-
-<!-- Question 3 -->
-<!-- Is there a mobile app? -->
-
-<!-- Answer 3 -->
-<!-- Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum
-dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra
-mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum. -->
-
-<!-- Question 4 -->
-<!-- What about other Chromium browsers? -->
-
-<!-- Answer 4 -->
-<!-- Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at
-euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.
-More Info 35,000+ already joined Stay up-to-date with what we’re doing Contact
-Us Features Pricing Contact -->
